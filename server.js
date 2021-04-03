@@ -22,7 +22,7 @@ router.get('/message', function(req,res){
 router.post('/message', function(req,res){
     console.log(req.query);
     if (req.query.error == "ok") {
-        response.error(req , res , 400 , "Error captado")    
+        response.error(req , res , 400 , "Error captado", "Es solo una simulación de error.")    
     } else {
         response.success(req, res , 201 , "Creado correctamente")
     }
